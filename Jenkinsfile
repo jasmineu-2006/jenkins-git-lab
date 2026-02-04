@@ -10,7 +10,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Testing from Jenkinsfile'
+                echo 'Testing from UPDATED Jenkinsfile'
+
             }
         }
 
