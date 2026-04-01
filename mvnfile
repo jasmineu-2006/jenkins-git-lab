@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'M3'
+    }
+
+    stages {
+
+        stage('Checkout Git') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/jasmineu-2006/SIMPLE-MAVEN-APPLICATION.git'
+            }
+        }
+
+        stage('Build and Test') {
+            steps {
+                bat 'mvn clean test'
+            }
+        }
+
+    }
+}
