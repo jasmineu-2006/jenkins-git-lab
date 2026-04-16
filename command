@@ -93,3 +93,7 @@ L) Tagging
  → Creates a tag.
  git push origin v1.0
  → Pushes tag to remote.
+mvn compile
+mvn test
+mvn clean install
+mvn clean test
